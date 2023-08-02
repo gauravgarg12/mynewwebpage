@@ -22,6 +22,33 @@
             border-bottom-left-radius: 50%;
             border-bottom-right-radius: 50%;
          }
+         .box{
+            width:200px;
+            height:200px;
+            background-color: green;
+            transition:width 3s;
+         }
+         .box:hover{
+            width:400px;
+            border-radius: 0 50%;
+         }
+         .mybutton{
+            background-color:red;
+            border:none;
+            margin:10px;
+            border-radius:50px;
+            padding:5px 20px;
+            color:white;
+
+        
+         }
+         .mybutton:hover{
+            color:grey;
+            background-color: blue;
+         }
+         .myimage:hover{
+            transform:scale(1.5);
+         }
          
     </style>
 </head>
@@ -36,6 +63,31 @@
         <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
         <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
         <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
-    </table>    
+    </table> 
+    
+    <div class="box"></div>
+    <br>
+    <hr>
+    <br>
+    <button class="mybutton">Google</button> 
+    <br>
+    <img src="images.jpg" class="myimage">
+    <form>
+
+        <input type="text">
+        <br>
+        password:<input type="password">
+        <br>
+        email:<input type="email">
+        <br>
+        contact:<input type="number">
+        <br>
+        <input type="submit" value="login" >
+        <hr>
+        <label for="name"> user name</label>
+        <input type="text" id="name" placeholder="enter your name">
+
+
+    </form>
 </body>
 </html>
